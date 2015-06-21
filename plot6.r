@@ -15,6 +15,6 @@ png('plot6.png', width=1000, height=400)
 g <- ggplot(aggEm, aes(factor(year), Emissions))
 g <- g + facet_grid(. ~ fips)
 g <- g +geom_bar(stat="identity") + xlab("year") + ylab(expression('Total PM'[2.5]*" Emissions")) +
-  ggtitle("Total Emissions from motor vehicles in Los Angeles, CA (06037) vs. Baltimore City, MD (24510)")
+  ggtitle("Total Emissions from Motor Vehicles in Los Angeles, CA (06037) vs. Baltimore City, MD (24510)")
 print(g)
 dev.off()
